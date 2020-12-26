@@ -1,0 +1,55 @@
+<%- include('header.html') -%>
+
+<!-- 页头 -->
+<header class="masthead" style="background-image: url('public/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>萌萌哒端木仇</h1>
+          <span class="subheading">“耳机是人类的避难所 <br> 音乐是心脏的救命丸”</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 页面 -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <% articles.forEach(article => { %>
+      <div class="post-preview">
+        <li class="list-inline-item">
+          <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-<%= article.icon %> fa-stack-1x fa-inverse"></i>
+                </span>
+          </a>
+        </li>
+        <a href="/post">
+          <h2 class="post-title">
+            <%= article.title%>
+          </h2>
+          <h3 class="post-subtitle">
+            <%= article.content%>
+          </h3>
+        </a>
+        <p class="post-meta">发送于
+          <%= article.date.toLocaleString() %></p>
+      </div>
+      <hr>
+      <div class="clearfix">
+        <a class="btn btn-info float-right" href="#">查看详情 &rarr;</a>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- 页脚 -->
+<%- include('footer.html') -%>

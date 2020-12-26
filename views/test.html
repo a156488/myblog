@@ -1,0 +1,62 @@
+<%- include('header.html') -%>
+
+<header class="masthead" style="background-image: url('public/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>萌萌哒端木仇</h1>
+                    <span class="subheading">“耳机是人类的避难所 <br> 音乐是心脏的救命丸”</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container mt-5">
+    <h2 class="mb-4">热门推荐</h2>
+    <div class="card-deck">
+        <% hots.forEach(hot => { %>
+        <div class="card">
+            <img src="./public/images/contact-bg.jpg" alt="..." class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title"><%= hot.title%></h5>
+                <p class="card-text"><small class="text-muted"><%= hot.time%></small></p>
+                <p class="card-text"><%= hot.content%></p>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <a href="#" class="btn btn-primary float-right stretched-link">查看详情</a>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h2 class="mb-4">最新博文</h2>
+    <div class="row row-cols-4">
+        <% articles.forEach(article => { %>
+        <div class="col my-3">
+            <div class="card h-100">
+                <img src="./public/images/contact-bg.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title"><%= article.title%></h5>
+                    <p class="card-text"><small class="text-muted"><%= article.time%></small></p>
+                    <p class="card-text"><%= article.content%></p>
+                </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <a href="#" class="btn btn-primary float-right stretched-link">查看详情</a>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+
+
+
+<%- include('footer.html') -%>

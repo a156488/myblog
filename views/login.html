@@ -1,0 +1,44 @@
+<%- include('header.html') -%>
+
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h1>欢迎登录</h1>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <form action="/login" method="post" class="was-validated">
+                    <div class="form-row mb-3">
+                        <label for="username" class="col-2 text-justify col-form-label text-right"
+                               style="color: whitesmoke">账号：</label>
+                        <input type="text" class="form-control col-7" id="username" name="username" required
+                               laceholder="请填写账号">
+                        <p class="invalid-feedback col-3 col-form-label">请填写账号</p>
+                    </div>
+                    <div class="form-row mb-3">
+                        <label for="password" class="col-2 text-justify col-form-label text-right"
+                               style="color: whitesmoke">密码：</label>
+                        <input type="password" class="form-control col-7" id="password" name="password" required
+                               laceholder="请填写密码">
+                        <p class="invalid-feedback col-3 col-form-label">请填写密码</p>
+                    </div>
+                    <div class="form-row mb-3">
+                        <input type="submit" class="btn btn-primary w-100 col-7 offset-2" value="登录">
+                    </div>
+                    <div class="form-row">
+                        <div class="text-danger col offset-2"><%=msg%></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<%- include('footer.html') -%>
+

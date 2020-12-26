@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>dmc-forwardTogether</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 字体 -->
+    <link href="public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS-->
+    <link href="public/stylesheets/clean-blog.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="/">DMC的个人博客</a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            菜单
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <div class="nav-link navbar-form text-lg-center">
+                        <form action="/search" class="form-inline">
+                            <input class="form-control mr-sm-2" name="keyword" placeholder="请输入关键词..." type="text">
+                            <button class="btn btn-outline-secondary btn-sm " type="submit" style="color:#444;height: 40px;" >
+                                    搜索
+                                </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <% categories.forEach(category => { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= category.path %>"><%= category.name %></a>
+                </li>
+                <% }) %>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <% if (user) { %>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                            <%= user.username %> 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/user/logout">退出</a>
+                        </div>
+                    </li>          
+                <% }else { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">登录</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
