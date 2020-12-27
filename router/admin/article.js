@@ -76,7 +76,7 @@ articleApp.get('/del', article.del, (req, res) => {
     if (req.affectedRows > 0) {
         res.json({ code: 1, msg: '删除成功' })
     } else {
-        res.json({ colde: 2, msg: '删除失败' })
+        res.json({ code: 2, msg: '删除失败' })
     }
 })
 

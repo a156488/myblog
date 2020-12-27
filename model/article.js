@@ -137,6 +137,8 @@ module.exports = class Article extends require('./model') {
      * 获取指定页文章列表
      * @param {integer} start 起始索引
      * @param {integer} size 查询条目数
+     * @param category_id
+     * @param hot
      */
     static getPage(start, size, category_id, hot) {
         return new Promise((resolve, reject) => {
@@ -190,7 +192,7 @@ module.exports = class Article extends require('./model') {
 
     /**
      * 删除文章
-     * @param {integer}} id 文章编号
+     * @param {integer} id 文章编号
      */
     static del(id) {
         return new Promise((resolve, reject) => {

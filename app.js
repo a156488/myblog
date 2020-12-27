@@ -70,7 +70,7 @@ app.post('/admin/*', upload.single('upload'), (req, res, next) => {
         // file.path ==> 上传后的文件路径
         fs.renameSync(file.path, file.path + extname)
         // file.filename ==> 上传后的文件名
-        req.uploadUrl = '/upload/' + file.filename + extname
+        req.uploadUrl = '/static/upload/' + file.filename + extname
     }
     next()
 })
