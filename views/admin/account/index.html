@@ -7,7 +7,7 @@
     <title>首页</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1658828_vud4w73neg.css">
-    <link rel="stylesheet" href="./static/admin/css/style.css">
+    <link rel="stylesheet" href="/static/admin/css/style.css">
 </head>
 
 <body class="bg-light">
@@ -29,27 +29,27 @@
                             <div class="card-body">
                                 <form action="/article/add" type="">
                                     <div class="form-row">
-                                        <label for="title" class="col-2 text-center col-form-label">登录账号：</label>
-                                        <input type="text" class="col-8 form-control" name="title" id="title"
+                                        <label for="username" class="col-2 text-center col-form-label">登录账号：</label>
+                                        <input type="text" class="col-8 form-control" name="title" id="username"
                                             value="admin" required>
                                     </div>
                                     <div class="form-row mt-3">
-                                        <label for="category_id" class="col-2 text-center col-form-label">登录密码：</label>
-                                        <input type="password" class="col-8 form-control" name="title" id="title"
+                                        <label for="password" class="col-2 text-center col-form-label">登录密码：</label>
+                                        <input type="password" class="col-8 form-control" name="title" id="password"
                                             value="admin" required>
                                     </div>
                                     <div class="form-row mt-3">
-                                        <label for="category_id" class="col-2 text-center col-form-label">确认密码：</label>
-                                        <input type="password" class="col-8 form-control" name="title" id="title"
+                                        <label for="repeat" class="col-2 text-center col-form-label">确认密码：</label>
+                                        <input type="password" class="col-8 form-control" name="title" id="repeat"
                                             value="admin" required>
                                     </div>
                                     <div class="form-row mt-3">
-                                        <label for="content" class="col-2 text-center col-form-label">网站logo：</label>
+                                        <label for="customFile" class="col-2 text-center col-form-label">网站logo：</label>
                                         <div class="col-8">
                                             <input type="file" class="d-none" id="customFile" name="logo"
                                                 accept="image/*">
                                             <label for="customFile" class="position-relative">
-                                                <img src="/admin/img/logo.png" data-src="holder.js/200x200?text=点击上传"
+                                                <img src="/static/admin/img/logo.png" data-src="holder.js/200x200?text=点击上传"
                                                     class="img-thumbnail" width="200" height="200">
                                                 <button type="button"
                                                     class="delimg btn btn-danger btn-sm position-absolute"

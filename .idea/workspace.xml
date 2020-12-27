@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cedd425d-d042-46c9-8049-03dcae6f3442" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/account/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/account/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/log/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/log/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +119,7 @@
       <workItem from="1609067400634" duration="947000" />
       <workItem from="1609069006773" duration="3827000" />
       <workItem from="1609073888370" duration="744000" />
-      <workItem from="1609074851991" duration="1046000" />
+      <workItem from="1609074851991" duration="3141000" />
     </task>
     <task id="LOCAL-00001" summary="session">
       <created>1608988711902</created>
@@ -162,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609075325737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="search页面修复">
+      <created>1609075939163</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609075939163</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +194,7 @@
     <MESSAGE value="112" />
     <MESSAGE value="完成" />
     <MESSAGE value="修复若干bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复若干bug" />
+    <MESSAGE value="search页面修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="search页面修复" />
   </component>
 </project>
