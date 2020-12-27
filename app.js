@@ -24,21 +24,50 @@ app.use(cookieParser());
 app.use('/public/',express.static(path.join(__dirname, './public/')));
 app.use('/node_modules/',express.static(path.join(__dirname, './node_modules/')));
 
-app.use(express.urlencoded({extended:true}))
+// 上传配置
+const upload = multer({
+    dest: './static/upload', // 上传文件的存储目录
+    limits: {
+        fileSize: 1024 * 1024 * 2 // 单个文件大小限制在2M以内
+    }
+})
 
+// POST请求处理
+app.use(express.urlencoded({ extended: true }))
+// SESSION配置
 app.use(session({
-    keys:['secret'],
-    maxAge:1000*60*30
+    keys: ['secret'],
+    maxAge: 1000 * 60 * 30
 }))
 
-app.use(/\/(index)?/, indexRouter);
-app.use('/users', usersRouter);
-app.use('/login', loginRouter);
-app.use('/post', postRouter);
-app.use('/contact', contactRouter);
-app.use('/about', aboutRouter);
-app.use('/reg', regRouter);
-app.use('/search', searchRouter);
+// SESSION延期
+app.use((req, res, next) => {
+    req.session.nowInMinutes = Math.floor(Date.now() / 60e3)
+    next()
+})
+
+// 进入后台的权限验证
+app.use('/admin/?*', require('./middleware/auth').allowToAdmin)
+
+// 上传操作
+app.post('/admin/*', upload.single('upload'), (req, res, next) => {
+    // 上传成功后的文件对象
+    let { file } = req
+    if (file) {
+        //  file.originalname ==> 文件的原名称
+        let extname = path.extname(file.originalname)
+        // file.path ==> 上传后的文件路径
+        fs.renameSync(file.path, file.path + extname)
+        // file.filename ==> 上传后的文件名
+        req.uploadUrl = '/upload/' + file.filename + extname
+    }
+    next()
+})
+
+app.get('/user/logout', (req, res) => {
+    req.session.user = null
+    res.render('login', { msg: '退出成功' })
+})
 
 app.use(function(req, res, next) {
     next(createError(404));

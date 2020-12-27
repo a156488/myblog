@@ -1,15 +1,19 @@
-const express = require('express');
-const category = require('../middleware/category');
+/**
+ * 搜索子应用
+ */
+
+const express = require('express')
 const article = require('../middleware/article')
-const auth = require('../middleware/auth');
+const category = require('../middleware/category')
+const auth = require('../middleware/auth')
 
-//搜索子应用
-const router = express.Router();
+// 首页子应用
+const searchApp = express()
 
-//加载搜索页面
-router.get('/', [article.getListByKeyword,category.getList,auth.getUser],(req, res)=>{
-    let {articles,categories,user} = req;
-    res.render('search',{articles:articles,categories:categories,keyword:req.query.keyword,user:user});
-});
+// 加载首页页面
+searchApp.get('/', [article.getListBykeywrod, category.getList, auth.getUser], (req, res) => {
+    let { articles, categories, user } = req
+    res.render('search', { articles: articles, categories: categories, keyword: req.query.keyword, user: user })
+})
 
-module.exports = router;
+module.exports = searchApp

@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cedd425d-d042-46c9-8049-03dcae6f3442" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/middleware/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/pv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/pv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/account/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/article/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/article/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/article/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/category/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/log/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/navs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/admin/account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/admin/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/admin/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/admin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/admin/log.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="HTML" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bilibili/myblog/源码/index.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -71,16 +61,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../bilibili/myblog/源码/middleware/article.js" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../bilibili/myblog/源码/index.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vuedemo\myblog\router" />
       <recent name="D:\vuedemo\myblog\views" />
       <recent name="D:\vuedemo\myblog\model" />
       <recent name="D:\vuedemo\myblog\middleware" />
       <recent name="D:\vuedemo\myblog\public\vendor\fontawesome-free" />
-      <recent name="D:\vuedemo\myblog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\AppData\Roaming\JetBrains\WebStorm2020.3\scratches" />
@@ -133,7 +123,7 @@
       <workItem from="1608696628344" duration="1322000" />
       <workItem from="1608983187236" duration="1126000" />
       <workItem from="1608987610419" duration="181000" />
-      <workItem from="1608988054007" duration="4569000" />
+      <workItem from="1608988054007" duration="5920000" />
     </task>
     <task id="LOCAL-00001" summary="session">
       <created>1608988711902</created>
@@ -149,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609044354644</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="111">
+      <created>1609045735691</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609045735691</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +156,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="session" />
     <MESSAGE value="error和图标修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="error和图标修复" />
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
   </component>
 </project>
