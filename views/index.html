@@ -1,7 +1,7 @@
 <%- include('header.html') -%>
 
 <!-- 页头 -->
-<header class="masthead" style="background-image: url('public/images/home-bg.jpg')">
+<header class="masthead" style="background-image: url('static/images/home-bg.jpg')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -15,9 +15,52 @@
   </div>
 </header>
 
-<!-- 页面 -->
+<!-- 热门推荐 -->
 <div class="container">
   <div class="row">
+    <div class="col-2">
+      <h2 class="col-2">热门推荐</h2>
+    </div>
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <% hots.forEach(hot => { %>
+      <div class="post-preview">
+        <li class="list-inline-item">
+          <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-<%= hot.icon %> fa-stack-1x fa-inverse"></i>
+                </span>
+          </a>
+        </li>
+        <a href="/article/<%=hot.id%>">
+          <h2 class="post-title">
+            <%= hot.title%>
+          </h2>
+          <h3 class="post-subtitle">
+            <%= hot.content.replace(/<[^>]+>/g,'').substring(0,50) %>...
+          </h3>
+        </a>
+        <p class="post-meta">发送于
+          <%= hot.date.toLocaleString() %></p>
+      </div>
+      <hr>
+      <div class="clearfix">
+        <a class="btn btn-info float-right" href="/article/<%=hot.id%>">查看详情 &rarr;</a>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- 最新博文 -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <h2 class="col-2">最新博文</h2>
+    </div>
     <div class="col-lg-8 col-md-10 mx-auto">
       <% articles.forEach(article => { %>
       <div class="post-preview">
@@ -29,12 +72,12 @@
                 </span>
           </a>
         </li>
-        <a href="/post">
+        <a href="/article/<%=article.id%>">
           <h2 class="post-title">
             <%= article.title%>
           </h2>
           <h3 class="post-subtitle">
-            <%= article.content%>
+            <%= article.content.replace(/<[^>]+>/g,'').substring(0,50) %>...
           </h3>
         </a>
         <p class="post-meta">发送于
@@ -42,7 +85,7 @@
       </div>
       <hr>
       <div class="clearfix">
-        <a class="btn btn-info float-right" href="#">查看详情 &rarr;</a>
+        <a class="btn btn-info float-right" href="/article/<%=article.id%>">查看详情 &rarr;</a>
       </div>
       <% }) %>
     </div>

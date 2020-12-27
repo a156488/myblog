@@ -11,15 +11,15 @@
     <title>dmc-forwardTogether</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- 字体 -->
-    <link href="public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- CSS-->
-    <link href="public/stylesheets/clean-blog.css" rel="stylesheet">
+    <link href="/static/stylesheets/clean-blog.css" rel="stylesheet">
 
 </head>
 
@@ -48,9 +48,14 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">主页</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
                 <% categories.forEach(category => { %>
                 <li class="nav-item">
-                    <a class="nav-link" href="<%= category.path %>"><%= category.name %></a>
+                    <a class="nav-link" href="/article/list/<%=category.id%>"><%= category.name %></a>
                 </li>
                 <% }) %>
             </ul>
@@ -61,7 +66,7 @@
                         <%=user.username%>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="/admin">个人中心</a>
+                        <a class="dropdown-item" href="/admin/index">个人中心</a>
                         <a class="dropdown-item" href="/user/logout">退出</a>
                     </div>
                 </li>

@@ -1,47 +1,71 @@
-<%- include('header.html') -%>
+<!DOCTYPE html>
+<html lang="en">
 
-<header class="masthead">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="page-heading">
-                    <h1>欢迎登录</h1>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <form action="/login" method="post" class="was-validated">
-                    <div class="form-row mb-3">
-                        <label for="username" class="col-2 text-justify col-form-label text-right"
-                               style="color: whitesmoke">账号：</label>
-                        <input type="text" class="form-control col-7" id="username" name="username" required
-                               placeholder="请填写账号">
-                        <p class="invalid-feedback col-3 col-form-label">请填写账号</p>
-                    </div>
-                    <div class="form-row mb-3">
-                        <label for="password" class="col-2 text-justify col-form-label text-right"
-                               style="color: whitesmoke">密码：</label>
-                        <input type="password" class="form-control col-7" id="password" name="password" required
-                               placeholder="请填写密码">
-                        <p class="invalid-feedback col-3 col-form-label">请填写密码</p>
-                    </div>
-                    <div class="form-row mb-3">
-                        <input type="submit" class="btn btn-primary w-100 col-7 offset-2" value="登录">
-                    </div>
-                    <div class="form-row">
-                        <div class="text-danger col offset-2"><%=msg%></div>
-                    </div>
-                </form>
-            </div>
-            <div class="small text-center card-footer">
-                <a href="/" class="text-secondary card-link">点击此处，返回首页</a>
-            </div>
-        </div>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>dmc-forwardTogether</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 字体 -->
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS-->
+    <link href="static/stylesheets/clean-blog.css" rel="stylesheet">
+
+</head>
+
+<body class="vh-100 d-flex flex-column justify-content-center align-items-center bg-secondary">
+
+<div class="card w-25">
+    <div class="card-header">
+        <h3 class="card-title">欢迎登陆</h3>
     </div>
-</header>
+    <div class="card-body">
+        <form action="/login" method="POST" class="was-validated">
+            <div class="form-row mb-3">
+                <label for="username" class="col-2 text-justify col-form-label text-right">账号：</label>
+                <input type="text" class="form-control col-7" id="username" name="username" required
+                       placeholder="请填写账号">
+                <p class="invalid-feedback col-3 col-form-label">请填写账号</p>
+            </div>
+            <div class="form-row mb-3">
+                <label for="password" class="col-2 text-justify col-form-label text-right">密码：</label>
+                <input type="password" class="form-control col-7" id="password" name="password" required
+                       placeholder="请填写密码">
+                <p class="invalid-feedback col-3 col-form-label">请填写密码</p>
+            </div>
+            <div class="form-row mb-3">
+                <input type="submit" class="btn btn-primary w-100  col-7 offset-2" value="登录">
+            </div>
+            <div class="form-row">
+                <div class="text-danger col offset-2"><%=msg%> </div>
+            </div>
+        </form>
+    </div>
+    <div class="small text-center card-footer">
+        <a href="/" class="text-secondary card-link">点击此处，返回首页</a>
+    </div>
+</div>
 
 
+<!-- Bootstrap core JavaScript -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!-- Custom scripts for this template -->
+<script src="../static/javascripts/clean-blog.min.js"></script>
 
-<%- include('footer.html') -%>
+</body>
+
+</html>
+
 

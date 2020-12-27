@@ -1,28 +1,17 @@
+/**
+ * 入口模块
+ */
 const createError = require('http-errors');
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const session = require('cookie-session');
-const logger = require('morgan');
-const ejs = require('ejs');
+const express = require('express')
+const session = require('cookie-session')
+var cookieParser = require('cookie-parser');
+const multer = require('multer')
+const path = require('path')
+const fs = require('fs')
+var logger = require('morgan');
 
-
-const indexRouter = require('./router/index'), usersRouter = require('./router/users'),
-    loginRouter = require('./router/login'), postRouter = require('./router/post'),
-    contactRouter = require('./router/contact'), aboutRouter = require('./router/about'),
-    regRouter = require('./router/reg'), searchRouter = require('./router/search'),app = express();
-
-
-app.set('view engine', 'html');
-app.set('views',`${__dirname}/views`);
-app.engine('html', ejs.renderFile);
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use('/public/',express.static(path.join(__dirname, './public/')));
-app.use('/node_modules/',express.static(path.join(__dirname, './node_modules/')));
+// 创建主应用
+const app = express()
 
 // 上传配置
 const upload = multer({
@@ -32,8 +21,21 @@ const upload = multer({
     }
 })
 
+// 模板引擎的设置
+app.set('view engine', 'html')
+app.set('views', `${__dirname}/views`)
+app.engine('html', require('ejs').renderFile)
+
+// 静态资源配置
+app.use(logger('dev'));
+app.use(express.json());
+app.use(cookieParser());
+app.use('/static/',express.static(path.join(__dirname, './static/')));
+app.use('/node_modules/',express.static(path.join(__dirname, './node_modules/')));
+
 // POST请求处理
 app.use(express.urlencoded({ extended: true }))
+
 // SESSION配置
 app.use(session({
     keys: ['secret'],
@@ -45,6 +47,15 @@ app.use((req, res, next) => {
     req.session.nowInMinutes = Math.floor(Date.now() / 60e3)
     next()
 })
+
+// 调用首页子应用
+app.use(/\/(index)?/, require('./router/index'))
+// 调用文章子应用
+app.use('/article', require('./router/article'))
+// 调用搜索子应用
+app.use('/search', require('./router/search'))
+// 调用登录子应用
+app.use('/login', require('./router/login'))
 
 // 进入后台的权限验证
 app.use('/admin/?*', require('./middleware/auth').allowToAdmin)
@@ -64,10 +75,23 @@ app.post('/admin/*', upload.single('upload'), (req, res, next) => {
     next()
 })
 
+// 调用后台首页
+app.use(/\/admin\/(index)?/, require('./router/admin/index'))
+// 调用后台文章管理
+app.use('/admin/article', require('./router/admin/article'))
+// 调用后台类目管理
+app.use('/admin/category', require('./router/admin/category'))
+// 调用后台日志管理
+app.use('/admin/log', require('./router/admin/log'))
+// 调用后台账户管理
+app.use('/admin/account', require('./router/admin/account'))
+
+// 退出
 app.get('/user/logout', (req, res) => {
     req.session.user = null
     res.render('login', { msg: '退出成功' })
 })
+
 
 app.use(function(req, res, next) {
     next(createError(404));

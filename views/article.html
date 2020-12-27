@@ -1,0 +1,61 @@
+<%- include('header.html') -%>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('<%=article.thumbnail%>')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1><%=article.title%></h1>
+            <span class="meta">发表时间：<%=article.date.toLocaleString()%></span>
+            <span class="meta">点击：<%=article.hits%></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <ol class="breadcrumb bg-white">
+            <li class="breadcrumb-item"><a href="/">首页</a></li>
+            <li class="breadcrumb-item"><a href="/article/list/<%=article.category_id%>"><%=article.name%></a></li>
+            <li class="breadcrumb-item active"><%=article.title%></li>
+          </ol>
+        </nav>
+        <div class="post-preview col-lg-8 col-md-10 mx-auto">
+          <%-article.content%>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <% tabs.forEach(tab => { %>
+          <span class="badge badge-pill"><%=tab.name%> </span>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<nav>
+  <ul class="pagination mt-3">
+    <% if (prev) { %>
+    <li class="page-item">
+      <a class="page-link" href="/article/<%=prev.id%>">上一篇：<%=prev.title%></a>
+    </li>
+    <% } %>
+    <% if (next) { %>
+    <li class="page-item ml-auto">
+      <a class="page-link" href="/article/<%=next.id%>">下一篇：<%=next.title%></a>
+    </li>
+    <% } %>
+  </ul>
+</nav>
+
+  <hr>
+
+
+  <!-- Footer -->
+<%- include('footer.html') -%>

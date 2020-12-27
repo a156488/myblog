@@ -2,17 +2,143 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cedd425d-d042-46c9-8049-03dcae6f3442" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/router/admin/account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/admin/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/admin/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/admin/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/admin/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/js/public.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/pv.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bootstrap4.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/css3.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/html5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/jquery.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/js.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/mybatis.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/node.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/php.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/spring.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/springmvc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/web.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/upload/Java.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myblog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Java.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/Java.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/about-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/about-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/contact-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/contact-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/error-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/error-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/home-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/home-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/post-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/post-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/post-sample-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/post-sample-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/clean-blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/clean-blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/clean-blog.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/clean-blog.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/contact_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jqBootstrapValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/jqBootstrapValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_bootstrap-overrides.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_bootstrap-overrides.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_masthead.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_post.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_post.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/clean-blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/clean-blog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/clean-blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/clean-blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/clean-blog.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/clean-blog.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/font-awesome.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/stylesheets/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/brands.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/regular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/regular.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/solid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/solid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/svg-with-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/svg-with-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/v4-shims.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/css/v4-shims.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/jquery/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/jquery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/jquery/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/reg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/account/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/account/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +175,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="HTML" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bilibili/myblog/源码/index.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/upload" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,18 +192,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vuedemo\myblog\static\upload" />
+      <recent name="D:\vuedemo\myblog\static" />
       <recent name="D:\vuedemo\myblog\router" />
       <recent name="D:\vuedemo\myblog\views" />
       <recent name="D:\vuedemo\myblog\model" />
-      <recent name="D:\vuedemo\myblog\middleware" />
-      <recent name="D:\vuedemo\myblog\public\vendor\fontawesome-free" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\vuedemo\myblog\static" />
       <recent name="C:\Users\Lenovo\AppData\Roaming\JetBrains\WebStorm2020.3\scratches" />
       <recent name="D:\vuedemo\myblog\model" />
       <recent name="D:\vuedemo\myblog\public\javascripts" />
       <recent name="D:\vuedemo\myblog\views" />
-      <recent name="D:\vuedemo\myblog\public\images\favicons" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,7 +249,7 @@
       <workItem from="1608696628344" duration="1322000" />
       <workItem from="1608983187236" duration="1126000" />
       <workItem from="1608987610419" duration="181000" />
-      <workItem from="1608988054007" duration="5920000" />
+      <workItem from="1608988054007" duration="19122000" />
     </task>
     <task id="LOCAL-00001" summary="session">
       <created>1608988711902</created>
@@ -146,17 +272,35 @@
       <option name="project" value="LOCAL" />
       <updated>1609045735691</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="112">
+      <created>1609047085718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609047085718</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="session" />
     <MESSAGE value="error和图标修复" />
     <MESSAGE value="111" />
-    <option name="LAST_COMMIT_MESSAGE" value="111" />
+    <MESSAGE value="112" />
+    <option name="LAST_COMMIT_MESSAGE" value="112" />
   </component>
 </project>
