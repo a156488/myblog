@@ -22,19 +22,19 @@
             <% articles.forEach(article => { %>
             <div class="post-preview">
                 <li class="list-inline-item">
-                    <a href="#">
+                    <a href="/article/<%=article.id%>">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-<%= article.icon %> fa-stack-1x fa-inverse"></i>
                 </span>
                     </a>
                 </li>
-                <a href="/post">
+                <a href="/article/<%=article.id%>">
                     <h2 class="post-title">
                         <%= article.title%>
                     </h2>
                     <h3 class="post-subtitle">
-                        <%= article.content%>
+                        <%= article.content.replace(/<[^>]+>/g,'').substring(0,50) %>
                     </h3>
                 </a>
                 <p class="post-meta">发送于
@@ -42,7 +42,7 @@
             </div>
             <hr>
             <div class="clearfix">
-                <a class="btn btn-default float-right" href="#">查看详情 &rarr;</a>
+                <a class="btn btn-default float-right" href="/article/<%=article.id%>">查看详情 &rarr;</a>
             </div>
             <% }) %>
         </div>
