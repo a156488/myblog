@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cedd425d-d042-46c9-8049-03dcae6f3442" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/static/upload/4179cc39afca2e32bcb9753922a0ae9f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/upload/5b80cb305f04ea9e71e062edc014335c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/account/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/account/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/log/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/log/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1l7qngXqR0ZH8Lyou4jxWiJBYey" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -37,6 +41,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="HTML" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
@@ -52,7 +57,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../bilibili/myblog/源码/router/admin/article.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -119,7 +124,12 @@
       <workItem from="1609067400634" duration="947000" />
       <workItem from="1609069006773" duration="3827000" />
       <workItem from="1609073888370" duration="744000" />
-      <workItem from="1609074851991" duration="3141000" />
+      <workItem from="1609074851991" duration="3518000" />
+      <workItem from="1609078649092" duration="2494000" />
+      <workItem from="1609118185454" duration="421000" />
+      <workItem from="1609166578111" duration="2574000" />
+      <workItem from="1609418472448" duration="5022000" />
+      <workItem from="1610164220859" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="session">
       <created>1608988711902</created>
@@ -170,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609075939163</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="search页面修复">
+      <created>1609078003175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609078003175</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
